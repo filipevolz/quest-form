@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: url('../assets/imageBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.75rem;
+}
+
+.description {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: white;
+}
+
+.description h1 {
+    font-size: 1.25rem;
+}
+
+.description p {
+    font-size: 0.95rem;
+} 
+
+form {
+    height: 378px;
+    width: 340px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+
+form input {
+    height: 35px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form .formItem {
+    padding: 0.625rem;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+form .formItem::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+form p {
+    margin-bottom: 1.25rem;
+}
+
+form .campo-obrigatorio {
+    font-size: 0.5rem;
+    color: #F52E2E;
+    margin-bottom: 0.44rem;
+    visibility: hidden;
+}
+
+form button {
+    height: 50px;
+    background-color: #3CCC87;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+}
+
+.aviso {
+    font-size: 7px;
+    font-weight: 500;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+}
+
+form .formItem.invalido{
+    border-color: #F52E2E;
+}
+
+form .formItem.valido{
+    border-color: #00C22B;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0.625rem;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    html {
+        height: 100%;
+    }
+}

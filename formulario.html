@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./src/styles/global.css">
+
+    <title>Formulário JS</title>
+</head>
+<body>
+    <div class="description">
+        <h1>FICOU COM DÚVIDA?<br/> NOS MANDE UMA MENSAGEM!</h1>
+        <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Nome completo *" id="name" class="formItem"/>
+        <label for="name" class="campo-obrigatorio">campo obrigatório</label>
+        <input type="email" placeholder="Email *" id="email" class="formItem"/>
+        <label for="email" class="campo-obrigatorio">campo obrigatório</label>
+        <input type="tel" placeholder="Telefone *" id="fone" class="formItem"/>
+        <label for="fone" class="campo-obrigatorio">campo obrigatório</label>
+        <textarea placeholder="Mensagem *" id="mensage" class="formItem"></textarea>
+        <label for="mensage" class="campo-obrigatorio">campo obrigatório</label>
+        <p id="paragraph">*campo obrigatórios</p>
+        <button type="submit" id="buttonSubmit">Enviar</button>
+    </form>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
